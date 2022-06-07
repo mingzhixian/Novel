@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Novel</string>
+    <string name="title_activity_index">index</string>
+    <string name="title_activity_me">Me</string>
+    <string name="title_activity_find">Find</string>
+    <string name="title_activity_read">Read</string>
+    <string name="title_activity_details">Details</string>
+</resources>
