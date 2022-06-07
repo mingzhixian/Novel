@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">Novel</string>
-    <string name="title_activity_index">index</string>
+    <string name="app_name">阅</string>
+    <string name="title_activity_index">阅</string>
     <string name="title_activity_me">Me</string>
     <string name="title_activity_find">Find</string>
     <string name="title_activity_read">Read</string>
     <string name="title_activity_details">Details</string>
+    <string name="title_activity_detail">Detail</string>
 </resources>

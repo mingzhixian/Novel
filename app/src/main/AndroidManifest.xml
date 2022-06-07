@@ -7,21 +7,16 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Novel"
         tools:targetApi="31">
         <activity
-            android:name=".Details"
+            android:name=".Detail"
             android:exported="false"
-            android:label="@string/title_activity_details"
-            android:theme="@style/Theme.Novel" />
-        <activity
-            android:name=".Read"
-            android:exported="false"
-            android:label="@string/title_activity_read"
+            android:label="@string/title_activity_detail"
             android:theme="@style/Theme.Novel" />
         <activity
             android:name=".Find"
@@ -34,7 +29,7 @@
             android:label="@string/title_activity_me"
             android:theme="@style/Theme.Novel" />
         <activity
-            android:name=".index"
+            android:name=".Index"
             android:exported="true"
             android:label="@string/title_activity_index"
             android:theme="@style/Theme.Novel">

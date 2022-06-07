@@ -12,16 +12,31 @@ android {
         targetSdk 32
         versionCode 1
         versionName "1.0"
-
+        resConfigs('zh-rCN')
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary true
         }
     }
-
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi-v7a'
+            universalApk true
+        }
+    }
     buildTypes {
         release {
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
             minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }

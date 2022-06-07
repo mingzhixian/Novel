@@ -8,12 +8,25 @@
   "variantName": "release",
   "elements": [
     {
-      "type": "SINGLE",
+      "type": "UNIVERSAL",
       "filters": [],
       "attributes": [],
       "versionCode": 1,
       "versionName": "1.0",
-      "outputFile": "app-release.apk"
+      "outputFile": "app-universal-release.apk"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "armeabi-v7a"
+        }
+      ],
+      "attributes": [],
+      "versionCode": 1,
+      "versionName": "1.0",
+      "outputFile": "app-armeabi-v7a-release.apk"
     }
   ],
   "elementType": "File"
