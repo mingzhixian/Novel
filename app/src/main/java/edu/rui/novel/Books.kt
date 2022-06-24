@@ -1,4 +1,4 @@
-package edu.rui.novel.screen
+package edu.rui.novel
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -14,7 +14,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
-import edu.rui.novel.R
 import org.json.JSONObject
 import kotlin.math.roundToInt
 
@@ -66,7 +65,7 @@ fun Books(navController: NavHostController) {
     //书架
     val books = getBooks()
     items(books) { book ->
-      BookCard(book)
+      BookCard(book,navController)
       //除最后一个外两个item之间添加分割线
       if (book != books.last()) {
         //下横线

@@ -1,4 +1,4 @@
-package edu.rui.novel.activity.ui.theme
+package edu.rui.novel.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

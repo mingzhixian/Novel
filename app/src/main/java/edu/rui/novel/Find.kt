@@ -1,4 +1,4 @@
-package edu.rui.novel.screen
+package edu.rui.novel
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -19,7 +19,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
-import edu.rui.novel.R
 import org.json.JSONObject
 
 @Composable
@@ -138,7 +137,7 @@ fun Find(navController:NavHostController) {
         //列表
         val books = getSortBooks(sorts[selectSort])
         items(books) { book ->
-          BookCard(book)
+          BookCard(book,navController)
           //除最后一个外两个item之间添加分割线
           if (book != books.last()) {
             //下横线

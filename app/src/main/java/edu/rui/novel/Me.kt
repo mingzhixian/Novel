@@ -1,4 +1,4 @@
-package edu.rui.novel.screen
+package edu.rui.novel
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable

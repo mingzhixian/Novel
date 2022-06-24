@@ -1,4 +1,4 @@
-package edu.rui.novel.screen
+package edu.rui.novel
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -17,7 +17,6 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import edu.rui.novel.R
 import org.json.JSONObject
 
 //每本书的卡片
@@ -204,12 +203,6 @@ fun Bars(navController: NavHostController) {
       composable("书架") {
         selectedItem=0
         Books(navController)
-      }
-      composable("详情") {
-        Detail(navController, JSONObject())
-      }
-      composable("阅读") {
-        Read(navController)
       }
       composable("发现") {
         selectedItem=1

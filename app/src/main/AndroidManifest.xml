@@ -14,24 +14,9 @@
         android:theme="@style/Theme.Novel"
         tools:targetApi="31">
         <activity
-            android:name=".Detail"
-            android:exported="false"
-            android:label="@string/title_activity_detail"
-            android:theme="@style/Theme.Novel" />
-        <activity
-            android:name=".Find"
-            android:exported="false"
-            android:label="@string/title_activity_find"
-            android:theme="@style/Theme.Novel" />
-        <activity
-            android:name=".Me"
-            android:exported="false"
-            android:label="@string/title_activity_me"
-            android:theme="@style/Theme.Novel" />
-        <activity
-            android:name=".Index"
+            android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/title_activity_index"
+            android:label="@string/title_activity_main"
             android:theme="@style/Theme.Novel">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
